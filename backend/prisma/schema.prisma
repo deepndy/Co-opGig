@@ -1,0 +1,144 @@
+generator client {
+  provider = "prisma-client-js"
+}
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+enum Role {
+  CUSTOMER
+  WORKER
+  ADMIN
+}
+enum AvailabilityStatus {
+  AVAILABLE
+  BUSY
+  UNAVAILABLE
+}
+enum VerificationStatus {
+  PENDING
+  VERIFIED
+  REJECTED
+}
+enum JobStatus {
+  OPEN
+  ACCEPTED
+  IN_PROGRESS
+  COMPLETED
+  CUSTOMER_CONFIRMED
+  CANCELLED
+}
+enum Urgency {
+  LOW
+  NORMAL
+  HIGH
+  URGENT
+}
+enum ReviewStatus {
+  PENDING
+  APPROVED
+  REJECTED
+}
+model User {
+  id String @id @default(uuid()) @db.Uuid
+  name String
+  email String @unique
+  passwordHash String
+  role Role @default(CUSTOMER)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  workerProfile WorkerProfile?
+  customerJobs Job[] @relation("CustomerJobs")
+  jobEvents JobEvent[]
+  reviews Review[] @relation("CustomerReviews")
+  @@index([role])
+}
+model WorkerProfile {
+  userId String @id @db.Uuid
+  displayName String
+  serviceCategories String[]
+  serviceAreaText String
+  latitude Float?
+  longitude Float?
+  availabilityStatus AvailabilityStatus @default(UNAVAILABLE)
+  verificationStatus VerificationStatus @default(PENDING)
+  user User @relation(fields:[userId], references:[id], onDelete:Cascade)
+  credentials WorkerCredential[]
+  assignedJobs Job[] @relation("AssignedJobs")
+  reviews Review[]
+  @@index([availabilityStatus, verificationStatus])
+  @@index([serviceCategories], type: Gin)
+}
+model WorkerCredential {
+  id String @id @default(uuid()) @db.Uuid
+  workerId String @db.Uuid
+  credentialType String
+  offChainFileReference String
+  contentHash String
+  reviewStatus ReviewStatus @default(PENDING)
+  createdAt DateTime @default(now())
+  worker WorkerProfile @relation(fields:[workerId], references:[userId], onDelete:Cascade)
+  @@index([workerId, reviewStatus])
+}
+model Job {
+  id String @id @default(uuid()) @db.Uuid
+  customerId String @db.Uuid
+  description String
+  category String
+  categoryConfidence Float?
+  locationText String
+  latitude Float?
+  longitude Float?
+  urgency Urgency @default(NORMAL)
+  status JobStatus @default(OPEN)
+  assignedWorkerId String? @db.Uuid
+  preferredWorkerId String? @db.Uuid
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  customer User @relation("CustomerJobs", fields:[customerId], references:[id])
+  assignedWorker WorkerProfile? @relation("AssignedJobs", fields:[assignedWorkerId], references:[userId])
+  events JobEvent[]
+  review Review?
+  blockchainTransactions BlockchainTransaction[]
+  @@index([category, status])
+  @@index([customerId, createdAt])
+  @@index([assignedWorkerId, status])
+  @@index([preferredWorkerId])
+}
+model JobEvent {
+  id String @id @default(uuid()) @db.Uuid
+  jobId String @db.Uuid
+  priorStatus JobStatus?
+  newStatus JobStatus
+  actorId String @db.Uuid
+  timestamp DateTime @default(now())
+  blockchainTxHash String?
+  job Job @relation(fields:[jobId], references:[id], onDelete:Cascade)
+  actor User @relation(fields:[actorId], references:[id])
+  @@index([jobId, timestamp])
+}
+model Review {
+  id String @id @default(uuid()) @db.Uuid
+  jobId String @unique @db.Uuid
+  customerId String @db.Uuid
+  workerId String @db.Uuid
+  rating Int
+  comment String?
+  createdAt DateTime @default(now())
+  job Job @relation(fields:[jobId], references:[id])
+  customer User @relation("CustomerReviews", fields:[customerId], references:[id])
+  worker WorkerProfile @relation(fields:[workerId], references:[userId])
+  @@index([workerId, createdAt])
+}
+model BlockchainTransaction {
+  id String @id @default(uuid()) @db.Uuid
+  recordType String
+  recordId String
+  txHash String
+  chainId BigInt
+  contractAddress String
+  status String
+  createdAt DateTime @default(now())
+  job Job @relation(fields:[recordId], references:[id], onDelete:Cascade)
+  @@index([recordType, recordId])
+}

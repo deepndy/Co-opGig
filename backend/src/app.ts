@@ -1,0 +1,18 @@
+import express from 'express';
+import cors from 'cors';
+import helmet from 'helmet';
+import cookieParser from 'cookie-parser';
+import { randomUUID } from 'node:crypto';
+import { rateLimit } from 'express-rate-limit';
+import { config } from './config.js';
+import { api, } from './routes/index.js';
+import { fail } from './http.js';
+export const app=express();
+app.disable('x-powered-by');app.use(helmet());app.use(cors({origin:config.frontendOrigin,credentials:true}));app.use(express.json({limit:'1mb'}));app.use(cookieParser());
+app.use((req,res,next)=>{const id=randomUUID();req.requestId=id;res.setHeader('x-request-id',id);next();});
+const authLimiter=rateLimit({windowMs:15*60*1000,limit:30,standardHeaders:true,legacyHeaders:false});
+app.use('/api/v1/auth',authLimiter);
+app.use('/api/v1/assistant',rateLimit({windowMs:60*1000,limit:20,standardHeaders:true,legacyHeaders:false}));
+app.use('/api/v1',api);
+app.use((_req,res)=>fail(res,404,'NOT_FOUND','Route not found'));
+app.use((err:unknown,_req:express.Request,res:express.Response,_next:express.NextFunction)=>{const message=err instanceof Error?err.message:'Unexpected error';console.error(JSON.stringify({level:'error',requestId:res.getHeader('x-request-id'),message}));if((err as {code?:string})?.code==='LIMIT_FILE_SIZE')return fail(res,413,'FILE_TOO_LARGE','Each image must be at most 10 MB');if((err as {code?:string})?.code==='LIMIT_UNEXPECTED_FILE')return fail(res,400,'VALIDATION_ERROR','Only imageT1 and imageT2 image uploads are accepted');return fail(res,500,'INTERNAL_ERROR','An unexpected error occurred');});

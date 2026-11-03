@@ -1,0 +1,30 @@
+# Dependencies and generated output
+node_modules/
+dist/
+artifacts/
+cache/
+coverage/
+.vite/
+
+# Python environments and caches
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+*.joblib
+
+# Runtime data and secrets
+.env
+.env.*
+!.env.example
+data/uploads/
+data/results/
+blockchain/deployment.local.json
+
+# OS/editor/log files
+*.log
+*.pid
+.DS_Store
+.idea/
+.vscode/

@@ -1,0 +1,669 @@
+/* Service icons --------------------------------------------------------- */
+.cg-service-icon {
+  display: inline-grid;
+  place-items: center;
+  width: 42px;
+  height: 42px;
+  border-radius: 13px;
+  background: var(--cg-blue-pale);
+  color: var(--cg-blue);
+  flex-shrink: 0;
+}
+
+.cg-service-icon--electrician {
+  background: #fff7df;
+  color: #a96800;
+}
+
+.cg-service-icon--plumber {
+  background: #eaf5ff;
+  color: #1d6bb8;
+}
+
+.cg-service-icon--carpenter {
+  background: #fff3e7;
+  color: #a45c19;
+}
+
+.cg-service-icon--painter {
+  background: #f3eeff;
+  color: #6a4ab5;
+}
+
+.cg-service-icon--cleaner {
+  background: #e9faf7;
+  color: #0e7d70;
+}
+
+.cg-service-icon--gardener {
+  background: #eff9ea;
+  color: #427d1e;
+}
+
+.cg-service-icon--driver {
+  background: #eef1ff;
+  color: #4352a4;
+}
+
+.cg-service-icon--caregiver {
+  background: #fff0f4;
+  color: #a63b5c;
+}
+
+.cg-service-icon--technician {
+  background: #eef2f8;
+  color: #40536a;
+}
+
+.cg-service-icon--domestic-helper {
+  background: #fff5e5;
+  color: #93611a;
+}
+
+.cg-service-icon--mason {
+  background: #f4f0e9;
+  color: #6a593f;
+}
+
+.cg-service-icon--appliance-repair {
+  background: #e9f8ff;
+  color: #0e6c88;
+}
+
+/* Service cards --------------------------------------------------------- */
+.cg-service-card {
+  display: flex;
+  flex-direction: column;
+  padding: 22px;
+  transition:
+    transform var(--cg-transition),
+    border-color var(--cg-transition),
+    box-shadow var(--cg-transition);
+}
+
+.cg-service-card:hover {
+  transform: translateY(-3px);
+  border-color: #cbdcf2;
+  box-shadow: var(--cg-shadow-lifted);
+}
+
+.cg-service-card__top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.cg-service-card h3 {
+  margin-bottom: 7px;
+  font-size: 16.5px;
+}
+
+.cg-service-card__description {
+  color: var(--cg-muted);
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.cg-service-card__link {
+  margin-top: 18px;
+  padding-top: 14px;
+  border-top: 1px solid #edf2f8;
+}
+
+.cg-task-list {
+  display: grid;
+  gap: 5px;
+  margin-top: 12px;
+}
+
+.cg-task-list li {
+  position: relative;
+  padding-left: 13px;
+  color: var(--cg-ink-soft);
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.cg-task-list li::before {
+  content: '';
+  position: absolute;
+  top: 0.63em;
+  left: 0;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: #8aaee0;
+}
+
+/* Avatars --------------------------------------------------------------- */
+.cg-avatar {
+  display: inline-grid;
+  place-items: center;
+  flex-shrink: 0;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #dcecff, #bad6ff);
+  color: #1f4d8d;
+  font-weight: 750;
+  letter-spacing: -0.02em;
+  box-shadow: 0 2px 8px -3px rgba(24, 58, 104, 0.3);
+}
+
+.cg-avatar--sm {
+  width: 29px;
+  height: 29px;
+  font-size: 10px;
+}
+
+.cg-avatar--md {
+  width: 42px;
+  height: 42px;
+  font-size: 12px;
+}
+
+.cg-avatar--lg {
+  width: 58px;
+  height: 58px;
+  font-size: 16px;
+}
+
+/* Worker cards ---------------------------------------------------------- */
+.cg-worker-card {
+  display: grid;
+  gap: 12px;
+  padding: 19px;
+  border: 1px solid var(--cg-border);
+  border-radius: var(--cg-radius-md);
+  background: #fff;
+}
+
+.cg-worker-card--compact {
+  gap: 9px;
+  padding: 15px;
+}
+
+.cg-worker-card__head {
+  display: flex;
+  align-items: flex-start;
+  gap: 11px;
+}
+
+.cg-worker-card__identity {
+  flex: 1;
+  min-width: 0;
+}
+
+.cg-worker-card__identity h3 {
+  margin-bottom: 2px;
+  overflow: hidden;
+  font-size: 14.5px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.cg-worker-card__area {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  overflow: hidden;
+  color: var(--cg-muted);
+  font-size: 11.5px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.cg-worker-card__area svg {
+  flex-shrink: 0;
+}
+
+.cg-worker-card__badges {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 4px;
+  max-width: 160px;
+}
+
+.cg-worker-card__categories {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.cg-worker-rating {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  color: var(--cg-muted);
+  font-size: 11.5px;
+}
+
+.cg-worker-rating__star {
+  color: #e0a11b;
+  fill: #f2c55c;
+}
+
+.cg-worker-rating strong {
+  color: var(--cg-ink);
+  font-size: 12px;
+}
+
+.cg-worker-card__completed {
+  color: var(--cg-muted);
+  font-size: 11.5px;
+}
+
+.cg-worker-card__bio {
+  padding-top: 10px;
+  border-top: 1px solid #eef3f9;
+  color: var(--cg-muted);
+  font-size: 12px;
+  line-height: 1.55;
+}
+
+.cg-worker-card--compact .cg-worker-card__badges {
+  max-width: 100%;
+}
+
+/* Job cards ------------------------------------------------------------- */
+.cg-job-list {
+  display: grid;
+  gap: 16px;
+}
+
+.cg-job-card {
+  padding: 22px;
+  border: 1px solid var(--cg-border);
+  border-radius: 20px;
+  background: #fff;
+  box-shadow: 0 8px 24px -22px rgba(13, 33, 61, 0.45);
+}
+
+.cg-job-card__top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+.cg-job-card__heading {
+  display: flex;
+  align-items: flex-start;
+  gap: 11px;
+}
+
+.cg-job-card__heading h3 {
+  font-size: 16px;
+}
+
+.cg-job-card__reference {
+  margin-bottom: 2px;
+  color: var(--cg-muted-light);
+  font-size: 10px;
+  font-weight: 650;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.cg-job-card__badges {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 5px;
+}
+
+.cg-job-card__description {
+  margin: 13px 0;
+  color: var(--cg-ink-soft);
+  font-size: 13.5px;
+  line-height: 1.6;
+  overflow-wrap: anywhere;
+}
+
+.cg-job-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px 15px;
+  margin-bottom: 3px;
+}
+
+.cg-job-meta li {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: var(--cg-muted);
+  font-size: 11.5px;
+  line-height: 1.5;
+}
+
+.cg-job-meta svg {
+  color: #88a1bd;
+}
+
+.cg-job-card__confidence {
+  margin-top: 8px;
+  color: var(--cg-muted-light);
+  font-size: 10.5px;
+  line-height: 1.5;
+}
+
+.cg-job-card__note {
+  margin-top: 11px;
+  padding: 8px 11px;
+  border-radius: 8px;
+  background: #f7faff;
+  color: var(--cg-muted);
+  font-size: 11.5px;
+}
+
+.cg-job-card__actions {
+  margin-top: 15px;
+  padding-top: 14px;
+  border-top: 1px solid #eef3f9;
+}
+
+.cg-job-card__demo-note {
+  margin-top: 9px;
+  color: var(--cg-muted-light);
+  font-size: 10px;
+}
+
+.cg-job-cancelled {
+  margin-top: 16px;
+  padding: 9px 12px;
+  border-radius: 8px;
+  background: #f5f7fa;
+  color: var(--cg-muted);
+  font-size: 12px;
+}
+
+.cg-confirm-inline {
+  padding: 13px;
+  border: 1px solid #ecd8a9;
+  border-radius: 10px;
+  background: #fffbef;
+}
+
+.cg-confirm-inline p {
+  margin-bottom: 10px;
+  color: #74520b;
+  font-size: 12.5px;
+  line-height: 1.55;
+}
+
+/* Job progress ---------------------------------------------------------- */
+.cg-status-steps {
+  display: flex;
+  gap: 0;
+  margin: 20px 0 2px;
+}
+
+.cg-status-step {
+  position: relative;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  color: var(--cg-muted-light);
+  font-size: 9.5px;
+  font-weight: 600;
+  line-height: 1.3;
+  text-align: center;
+}
+
+.cg-status-step::before {
+  content: '';
+  position: absolute;
+  top: 7px;
+  right: calc(50% + 9px);
+  left: calc(-50% + 9px);
+  height: 2px;
+  border-radius: 2px;
+  background: #e7edf5;
+}
+
+.cg-status-step:first-child::before {
+  display: none;
+}
+
+.cg-status-step.is-done::before,
+.cg-status-step.is-current::before {
+  background: #a9c4ec;
+}
+
+.cg-status-step__marker {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  place-items: center;
+  width: 16px;
+  height: 16px;
+  border: 2px solid #dce5f0;
+  border-radius: 50%;
+  background: #fff;
+  color: #fff;
+}
+
+.cg-status-step__marker > span {
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: #cdd9e7;
+}
+
+.cg-status-step.is-done {
+  color: var(--cg-ink-soft);
+}
+
+.cg-status-step.is-done .cg-status-step__marker {
+  border-color: var(--cg-blue);
+  background: var(--cg-blue);
+}
+
+.cg-status-step.is-current {
+  color: var(--cg-blue-strong);
+}
+
+.cg-status-step.is-current .cg-status-step__marker {
+  border-color: var(--cg-blue);
+  background: #fff;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.12);
+}
+
+.cg-status-step.is-current .cg-status-step__marker > span {
+  background: var(--cg-blue);
+}
+
+/* Cooperative role cards ------------------------------------------------ */
+.cg-role-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.cg-role-card {
+  padding: 22px;
+}
+
+.cg-role-card__top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 17px;
+}
+
+.cg-role-card__icon {
+  display: grid;
+  place-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 12px;
+  background: var(--cg-blue-pale);
+  color: var(--cg-blue);
+}
+
+.cg-role-card__number {
+  color: #c0cee0;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+}
+
+.cg-role-card h3 {
+  margin-bottom: 7px;
+  font-size: 15px;
+}
+
+.cg-role-card p {
+  color: var(--cg-muted);
+  font-size: 12.5px;
+  line-height: 1.62;
+}
+
+.cg-role-grid__note {
+  margin-top: 17px;
+  color: var(--cg-muted-light);
+  font-size: 11.5px;
+  line-height: 1.55;
+}
+
+/* Check lists ----------------------------------------------------------- */
+.cg-check-list {
+  display: grid;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.cg-check-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 9px;
+  color: var(--cg-ink-soft);
+  font-size: 13px;
+  line-height: 1.55;
+}
+
+.cg-check-list svg {
+  margin-top: 3px;
+  color: var(--cg-green);
+  flex-shrink: 0;
+}
+
+/* CTA band -------------------------------------------------------------- */
+.cg-cta-band {
+  position: relative;
+  overflow: hidden;
+  padding: clamp(48px, 6vw, 68px) 0;
+  background:
+    radial-gradient(700px 300px at 88% 15%, rgba(59, 130, 246, 0.38), transparent 65%),
+    radial-gradient(500px 300px at 0% 100%, rgba(30, 100, 190, 0.3), transparent 60%),
+    var(--cg-navy);
+}
+
+.cg-cta-band::before {
+  content: '';
+  position: absolute;
+  top: -130px;
+  right: -80px;
+  width: 330px;
+  height: 330px;
+  border: 1px solid rgba(147, 197, 253, 0.14);
+  border-radius: 50%;
+}
+
+.cg-cta-band__inner {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 38px;
+}
+
+.cg-cta-band__inner > div:first-child {
+  max-width: 650px;
+}
+
+.cg-cta-band h2 {
+  margin-bottom: 12px;
+  color: #fff;
+  font-size: clamp(1.7rem, 3vw, 2.35rem);
+}
+
+.cg-cta-band p {
+  max-width: 60ch;
+  color: #b6cae2;
+  font-size: 14px;
+  line-height: 1.65;
+}
+
+.cg-cta-band__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  flex-shrink: 0;
+}
+
+/* Responsive ------------------------------------------------------------ */
+@media (max-width: 1050px) {
+  .cg-role-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 900px) {
+  .cg-cta-band__inner {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+  }
+}
+
+@media (max-width: 620px) {
+  .cg-role-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .cg-status-step__label {
+    font-size: 8.5px;
+  }
+
+  .cg-job-card {
+    padding: 17px;
+  }
+
+  .cg-job-card__top {
+    flex-direction: column;
+    gap: 9px;
+  }
+
+  .cg-job-card__badges {
+    justify-content: flex-start;
+  }
+
+  .cg-cta-band__actions {
+    width: 100%;
+  }
+
+  .cg-cta-band__actions .cg-btn {
+    flex: 1;
+  }
+
+  .cg-worker-card__head {
+    flex-wrap: wrap;
+  }
+
+  .cg-worker-card__badges {
+    max-width: none;
+    justify-content: flex-start;
+    padding-left: 53px;
+  }
+}
+
+@media (max-width: 440px) {
+  .cg-cta-band__actions {
+    flex-direction: column;
+  }
+}

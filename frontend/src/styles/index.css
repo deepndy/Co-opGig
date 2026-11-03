@@ -1,0 +1,24 @@
+@import './tokens.css';
+@import './base.css';
+@import './layout.css';
+@import './components.css';
+@import './home.css';
+@import './booking.css';
+@import './auth.css';
+@import './dashboard.css';
+@import './content.css';
+@import './assistant.css';
+
+.cg-app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.cg-app > main {
+  flex: 1;
+}
+
+.cg-app > main:focus {
+  outline: none;
+}

@@ -1,0 +1,169 @@
+text,category,source
+There is a short circuit in my room,electrician,dev-sample-synthetic
+I need new wiring and switches installed in a bedroom,electrician,dev-sample-synthetic
+The MCB keeps tripping whenever the heater is on,electrician,dev-sample-synthetic
+Power socket is sparking when I plug in anything,electrician,dev-sample-synthetic
+Need to replace the old switchboard in the hall,electrician,dev-sample-synthetic
+Ceiling fan regulator is not working and the fan runs slow,electrician,dev-sample-synthetic
+Tube light and bulb holders need replacing in the kitchen,electrician,dev-sample-synthetic
+Entire house wiring needs to be checked before we move in,electrician,dev-sample-synthetic
+No electricity in two rooms but the rest of the house has power,electrician,dev-sample-synthetic
+Need an electrician to add a new power point near the bed,electrician,dev-sample-synthetic
+Fuse blew and the lights went off in the flat,electrician,dev-sample-synthetic
+Earthing wire is loose and needs fixing,electrician,dev-sample-synthetic
+bijli ka switch kharab ho gaya hai electrician chahiye,electrician,dev-sample-synthetic
+Install LED lights and a chandelier in the living room,electrician,dev-sample-synthetic
+Water leaking below the kitchen sink,plumber,dev-sample-synthetic
+The bathroom tap is dripping and needs a new washer,plumber,dev-sample-synthetic
+Toilet flush is not working and water keeps running,plumber,dev-sample-synthetic
+Kitchen drain is blocked and water is not going down,plumber,dev-sample-synthetic
+Need new pipes fitted for the washbasin in the bathroom,plumber,dev-sample-synthetic
+Low water pressure in the shower,plumber,dev-sample-synthetic
+The water tank is overflowing every morning,plumber,dev-sample-synthetic
+Pipe burst in the wall and water is coming out,plumber,dev-sample-synthetic
+Need a plumber to install a new commode,plumber,dev-sample-synthetic
+Wash basin is leaking from the joint,plumber,dev-sample-synthetic
+Bathroom shower mixer needs replacement,plumber,dev-sample-synthetic
+Sewer line smells and the drain keeps clogging,plumber,dev-sample-synthetic
+nal se paani tapak raha hai plumber chahiye,plumber,dev-sample-synthetic
+Water pump is not pushing water to the overhead tank,plumber,dev-sample-synthetic
+A wooden door hinge is broken,carpenter,dev-sample-synthetic
+Need to repair the wardrobe door that does not close,carpenter,dev-sample-synthetic
+Make a new bookshelf for the study room,carpenter,dev-sample-synthetic
+The bed frame is cracked and needs fixing,carpenter,dev-sample-synthetic
+Kitchen cabinet drawer is stuck and the handle is loose,carpenter,dev-sample-synthetic
+Need a carpenter for modular kitchen shelves,carpenter,dev-sample-synthetic
+Window frame is damaged and the wood is rotting,carpenter,dev-sample-synthetic
+Dining table leg is wobbly and needs repair,carpenter,dev-sample-synthetic
+Fit a new latch on the main wooden door,carpenter,dev-sample-synthetic
+Need custom plywood furniture for the bedroom,carpenter,dev-sample-synthetic
+Sliding door of the cupboard is off its track,carpenter,dev-sample-synthetic
+Polish and repair old wooden chairs,carpenter,dev-sample-synthetic
+Install a wooden partition and a TV unit in the living room,carpenter,dev-sample-synthetic
+darwaza ka hinge toot gaya hai carpenter chahiye,carpenter,dev-sample-synthetic
+The wall needs repainting,painter,dev-sample-synthetic
+Need the whole house painted before Diwali,painter,dev-sample-synthetic
+Paint is peeling in the bedroom and needs a fresh coat,painter,dev-sample-synthetic
+Want to whitewash the ceiling and walls,painter,dev-sample-synthetic
+Need putty and primer work on the living room walls,painter,dev-sample-synthetic
+Exterior painting for a two floor house,painter,dev-sample-synthetic
+Change the wall colour from white to light blue,painter,dev-sample-synthetic
+Apply waterproof paint on the terrace wall,painter,dev-sample-synthetic
+Need wallpaper put up in the kids room,painter,dev-sample-synthetic
+Paint the main gate and the grill with enamel,painter,dev-sample-synthetic
+Damp patches on the wall need to be repainted,painter,dev-sample-synthetic
+Texture painting for one accent wall,painter,dev-sample-synthetic
+Need a painter for two rooms this week,painter,dev-sample-synthetic
+ghar ki deewar ko rang karna hai painter chahiye,painter,dev-sample-synthetic
+Need deep cleaning of the whole flat,cleaner,dev-sample-synthetic
+Sofa and carpet cleaning at home,cleaner,dev-sample-synthetic
+Bathroom and kitchen cleaning needed this weekend,cleaner,dev-sample-synthetic
+Water tank cleaning for an apartment,cleaner,dev-sample-synthetic
+Post construction cleaning of a new house,cleaner,dev-sample-synthetic
+Need someone to mop and sweep the floors,cleaner,dev-sample-synthetic
+Window and balcony glass cleaning,cleaner,dev-sample-synthetic
+Move out cleaning before handing over the flat,cleaner,dev-sample-synthetic
+Sanitize and disinfect the office space,cleaner,dev-sample-synthetic
+Remove dust and cobwebs from the whole house,cleaner,dev-sample-synthetic
+Clean stains on the mattress and curtains,cleaner,dev-sample-synthetic
+Kitchen tiles and cabinets need heavy degreasing and scrubbing,cleaner,dev-sample-synthetic
+ghar ki safai ke liye cleaner chahiye,cleaner,dev-sample-synthetic
+One time festival cleaning for a three bedroom flat,cleaner,dev-sample-synthetic
+Need a gardener to trim the hedges and mow the lawn,gardener,dev-sample-synthetic
+Plants in my terrace garden are dying,gardener,dev-sample-synthetic
+Prune the mango tree in the backyard,gardener,dev-sample-synthetic
+Set up a small kitchen garden with soil and compost,gardener,dev-sample-synthetic
+Weeds are growing all over the lawn,gardener,dev-sample-synthetic
+Need monthly garden maintenance,gardener,dev-sample-synthetic
+Plant flower pots and saplings near the entrance,gardener,dev-sample-synthetic
+Landscaping for a small front yard,gardener,dev-sample-synthetic
+Fertilizer and pest care for the garden plants,gardener,dev-sample-synthetic
+Cut the overgrown grass in the compound,gardener,dev-sample-synthetic
+Need someone to water the plants while I travel,gardener,dev-sample-synthetic
+Tree branches hanging over the roof need trimming,gardener,dev-sample-synthetic
+baghicha ki dekhbhal ke liye mali chahiye,gardener,dev-sample-synthetic
+Create a lawn with fresh grass,gardener,dev-sample-synthetic
+Need a driver for my car every morning,driver,dev-sample-synthetic
+Looking for a full time chauffeur,driver,dev-sample-synthetic
+Cab for an outstation trip this weekend,driver,dev-sample-synthetic
+Airport pickup and drop tomorrow early morning,driver,dev-sample-synthetic
+School pickup and drop for my child,driver,dev-sample-synthetic
+Need a driver for a wedding for one day,driver,dev-sample-synthetic
+Part time driver for office commute,driver,dev-sample-synthetic
+Tempo or truck driver for moving house,driver,dev-sample-synthetic
+Hire a driver who can drive an automatic car,driver,dev-sample-synthetic
+Taxi for a day trip to Lonavala,driver,dev-sample-synthetic
+Need a driver for my parents hospital visits,driver,dev-sample-synthetic
+Experienced driver needed for long distance travel,driver,dev-sample-synthetic
+gaadi chalane ke liye driver chahiye,driver,dev-sample-synthetic
+Someone to drive my car to the service centre,driver,dev-sample-synthetic
+Need an attendant for my elderly father,caregiver,dev-sample-synthetic
+Looking for a nurse to look after a bedridden patient,caregiver,dev-sample-synthetic
+Post surgery care for my mother at home,caregiver,dev-sample-synthetic
+Night caregiver for an old age person with dementia,caregiver,dev-sample-synthetic
+Babysitter for my toddler on weekdays,caregiver,dev-sample-synthetic
+Someone to help my grandmother with medicines and meals,caregiver,dev-sample-synthetic
+Home nurse for injections and dressing,caregiver,dev-sample-synthetic
+Full time companion for a senior citizen,caregiver,dev-sample-synthetic
+Newborn baby care and mother support,caregiver,dev-sample-synthetic
+Need help to move and bathe an elderly relative,caregiver,dev-sample-synthetic
+Care assistant for a stroke patient at home,caregiver,dev-sample-synthetic
+Care for a child with special needs after school,caregiver,dev-sample-synthetic
+dadi ke liye ek caregiver chahiye,caregiver,dev-sample-synthetic
+Need a patient attendant at hospital for two nights,caregiver,dev-sample-synthetic
+My laptop is very slow and needs a technician,technician,dev-sample-synthetic
+Wifi router is not working and internet keeps disconnecting,technician,dev-sample-synthetic
+Install CCTV cameras at the shop entrance,technician,dev-sample-synthetic
+Inverter battery is not charging,technician,dev-sample-synthetic
+Set up a home theatre and projector,technician,dev-sample-synthetic
+Printer is not printing and shows an error,technician,dev-sample-synthetic
+Set top box and TV connection problem,technician,dev-sample-synthetic
+Install an intercom and a video doorbell,technician,dev-sample-synthetic
+Computer does not start after a power cut,technician,dev-sample-synthetic
+Need to set up a LAN network in the office,technician,dev-sample-synthetic
+Smart home lighting and switch setup,technician,dev-sample-synthetic
+Solar panel inverter fault needs checking,technician,dev-sample-synthetic
+Desktop computer motherboard problem,technician,dev-sample-synthetic
+Mobile charging port and electronics issue,technician,dev-sample-synthetic
+Need a maid for daily household chores,domestic-helper,dev-sample-synthetic
+Looking for a cook who can make lunch and dinner,domestic-helper,dev-sample-synthetic
+Full time house help who lives in,domestic-helper,dev-sample-synthetic
+Need someone for washing utensils and laundry,domestic-helper,dev-sample-synthetic
+Part time domestic helper for two hours every morning,domestic-helper,dev-sample-synthetic
+Maid for ironing clothes and daily chores,domestic-helper,dev-sample-synthetic
+Need household help for a family of five,domestic-helper,dev-sample-synthetic
+Cook needed for a small family,domestic-helper,dev-sample-synthetic
+Daily help for dishes and cooking,domestic-helper,dev-sample-synthetic
+Looking for a reliable housemaid near my society,domestic-helper,dev-sample-synthetic
+Someone to do kitchen work and wash clothes,domestic-helper,dev-sample-synthetic
+Domestic help for cooking on weekdays,domestic-helper,dev-sample-synthetic
+kaamwali bai chahiye roz ke kaam ke liye,domestic-helper,dev-sample-synthetic
+Need a house help for the daily kitchen work,domestic-helper,dev-sample-synthetic
+Need a mason to build a boundary wall,mason,dev-sample-synthetic
+Cracks in the wall need plaster and cement work,mason,dev-sample-synthetic
+Tile laying for the bathroom and kitchen floor,mason,dev-sample-synthetic
+Brick work for a new room extension,mason,dev-sample-synthetic
+Terrace waterproofing and concrete slab repair,mason,dev-sample-synthetic
+Broken floor needs to be re laid with marble,mason,dev-sample-synthetic
+Demolish a partition wall and rebuild it,mason,dev-sample-synthetic
+Plastering work for the new house,mason,dev-sample-synthetic
+Granite flooring and skirting work,mason,dev-sample-synthetic
+Foundation and column work for a small construction,mason,dev-sample-synthetic
+Repair the damaged parapet wall on the terrace,mason,dev-sample-synthetic
+Seepage in the wall needs masonry repair,mason,dev-sample-synthetic
+Build a small water tank with brick and cement,mason,dev-sample-synthetic
+raj mistri chahiye deewar banane ke liye,mason,dev-sample-synthetic
+My washing machine is not starting,appliance-repair,dev-sample-synthetic
+Fridge is not cooling properly,appliance-repair,dev-sample-synthetic
+The AC is making noise and not cooling,appliance-repair,dev-sample-synthetic
+Microwave oven stopped heating food,appliance-repair,dev-sample-synthetic
+Geyser is not heating water,appliance-repair,dev-sample-synthetic
+Water purifier is not working and has low flow,appliance-repair,dev-sample-synthetic
+Mixer grinder motor is burnt,appliance-repair,dev-sample-synthetic
+Dishwasher does not drain water,appliance-repair,dev-sample-synthetic
+Washing machine drum is not spinning,appliance-repair,dev-sample-synthetic
+Kitchen chimney is making loud noise,appliance-repair,dev-sample-synthetic
+Induction cooktop shows an error and switches off,appliance-repair,dev-sample-synthetic
+Air cooler fan is not working,appliance-repair,dev-sample-synthetic
+Need to service my split AC before summer,appliance-repair,dev-sample-synthetic
+Refrigerator door gasket is damaged and the freezer is icing up,appliance-repair,dev-sample-synthetic
